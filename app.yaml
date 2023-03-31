@@ -1,8 +1,8 @@
 runtime: python37
 
 handlers:
-- url: /gambar
-  static_dir: assets/gambar
+- url: /gambar/(.*\.(gif|png|jpg))
+  static_dir: assets/gambar/(.*\.(gif|png|jpg))
 
 - url: /css
   static_dir: assets/css
