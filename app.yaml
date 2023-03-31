@@ -1,11 +1,13 @@
 runtime: python37
 
 handlers:
-- url: asset/css
-  static_dir: asset/css
-
-- url: asset/gambar
-  static_dir: asset/gambar
+- url: /assets
+  static_dir: assets
+  
+- url: /(.*\.(gif|png|jpg|css|js|ico|svg))
+  static_files: \1
+  upload: (.*\.(gif|png|jpg|css|js|ico|svg))$
+  application_readable: true
   
 - url: /.*
   static_files: index.html
