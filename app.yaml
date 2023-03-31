@@ -2,10 +2,10 @@ runtime: python37
 
 handlers:
 - url: /gambar
-  static_dir: assets/gambar
+  static_dir: asset/gambar
 
 - url: /css
-  static_dir: assets/css
+  static_dir: asset/css
   
 - url: /.*
   static_files: index.html
