@@ -4,8 +4,8 @@ handlers:
 - url: /asset/css
   static_dir: asset/css
 
-- url: /assets/gambar
-  static_dir: assets/gambar
+- url: /asset/gambar
+  static_dir: asset/gambar
   
 - url: /.*
   static_files: index.html
