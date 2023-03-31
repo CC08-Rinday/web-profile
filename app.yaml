@@ -2,13 +2,7 @@ runtime: python37
 
 handlers:
 - url: /asset
-  static_dir: asset
-  
-- url: /(.*\.(gif|png|jpg|css|js|ico|svg))
-  static_files: \1
-  upload: (.*\.(gif|png|jpg|css|js|ico|svg))$
-  application_readable: true
-  
+  static_dir: asset 
 - url: /.*
   static_files: index.html
   upload: index.html
