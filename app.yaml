@@ -9,4 +9,4 @@ handlers:
 
 - url: /(.*)
   static_files: www/\1
-  upload: www/(.*)
+  upload: www/(index.html)
